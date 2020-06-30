@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ymrwuliu' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ymrwuliu
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'IQKeyboardManager'
+pod 'MJExtension'
+pod "SVProgressHUD-0.8.1"
+pod 'SDWebImage+ExtensionSupport'
+pod 'Masonry'
+pod 'TYPagerController'
+
+end

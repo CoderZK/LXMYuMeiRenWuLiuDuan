@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7D102DE5-E460-4873-A5F3-200D8D8A00CB"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "1FCA2D87-029D-4104-9916-955A90CE0793"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA58D71F-D547-457B-8948-45B3ECC5BC18"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ymrwuliu/vc/LxmMyOrderDetailVC.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "833"
+            endingLineNumber = "833"
+            landmarkName = "-setDetailGoodsModel:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BA58D71F-D547-457B-8948-45B3ECC5BC18 - 664c795732b6b5ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LxmAcGoodsCell setDetailGoodsModel:]"
+                  moduleName = "ymrwuliu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lixiaoman/Documents/%E7%85%9C%E7%BE%8E%E4%BA%BA%E7%89%A9%E6%B5%81%E6%AE%B5/ymrwuliu/ymrwuliu/vc/LxmMyOrderDetailVC.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "833"
+                  endingLineNumber = "833"
+                  offsetFromSymbolStart = "984">
+               </Location>
+               <Location
+                  uuid = "BA58D71F-D547-457B-8948-45B3ECC5BC18 - d8f8045ebaab75b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__38-[LxmAcGoodsCell setDetailGoodsModel:]_block_invoke"
+                  moduleName = "ymrwuliu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lixiaoman/Documents/%E7%85%9C%E7%BE%8E%E4%BA%BA%E7%89%A9%E6%B5%81%E6%AE%B5/ymrwuliu/ymrwuliu/vc/LxmMyOrderDetailVC.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "833"
+                  endingLineNumber = "833"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

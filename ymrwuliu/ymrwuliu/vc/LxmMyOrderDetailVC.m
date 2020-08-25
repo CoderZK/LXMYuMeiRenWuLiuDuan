@@ -221,7 +221,7 @@
     } else if (section == 1) {
         return self.detailModel.map.sub.count + self.detailModel.map.sends.count;
     }else if (section == 2) {
-        return 6;
+        return 7;
     }
     return 2;
 }
@@ -270,6 +270,7 @@
         }
         cell.status = self.detailModel.map.status;
         cell.orderDetailGoodsModel = self.detailModel.map.sub[indexPath.row];
+            cell.clipsToBounds = YES;
         return cell;
         }
     } else if (indexPath.section == 2) {
@@ -281,7 +282,7 @@
             cell.titleLabel.text = @"备注";
             cell.detailLabel.text = self.detailModel.map.order_info;
             return cell;
-        } else if (indexPath.row == 5) {
+        } else if (indexPath.row == 6) {
             LxmSubBuHuoOrderPriceCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LxmSubBuHuoOrderPriceCell"];
             if (!cell) {
                 cell = [[LxmSubBuHuoOrderPriceCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"LxmSubBuHuoOrderPriceCell"];
@@ -313,7 +314,16 @@
             cell.titleLabel.text = @"运费";
             cell.detailLabel.textColor = MainColor;
             cell.detailLabel.text = @"货到付款";
+        }else if (indexPath.row == 5) {
+            cell.titleLabel.text = @"赠送积分";
+            cell.detailLabel.textColor = MainColor;
+            
+            CGFloat f = self.detailModel.map.score_price.floatValue;
+            NSInteger d = self.detailModel.map.score_price.integerValue;
+            cell.detailLabel.text = f == d ? [NSString stringWithFormat:@"%ld",d] : [NSString stringWithFormat:@"%.2f",f];
+
         }
+        cell.clipsToBounds = YES;
         return cell;
     } else {
         LxmJieSuanPeiSongInfoCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LxmJieSuanPeiSongInfoCell"];
@@ -331,6 +341,7 @@
                 cell.detailLabel.text = [NSString stringWithFormat:@"%@",[self.detailModel.map.create_time getIntervalToZHXLongTime]];
             }
         }
+        cell.clipsToBounds = YES;
         return cell;
     }
 }
@@ -363,6 +374,13 @@
             return self.detailModel.map.orderHeight > 50 ? self.detailModel.map.orderHeight : 50;
         }
         return 0.01;
+    }
+    if (indexPath.section == 2 && indexPath.row == 5) {
+        if (self.detailModel.map.score_price.doubleValue > 0) {
+            return 50;
+        }else {
+            return 0;
+        }
     }
     return 50;
 }

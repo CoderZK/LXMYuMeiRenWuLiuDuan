@@ -59,6 +59,7 @@
 @property (nonatomic, strong) NSString *status;/* 1：待支付，2：待发货，3：待补货，4：已完成，5：已取消 */
 
 @property (nonatomic, strong) NSString *total_money;/* 订单金额 */
+@property (nonatomic, strong) NSString *score_price;/* 赠送积分 */
 
 @property (nonatomic, strong) NSString *province;/* 省 */
 

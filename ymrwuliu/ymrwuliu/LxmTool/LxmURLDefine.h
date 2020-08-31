@@ -11,7 +11,7 @@
 #define ISLOGIN [LxmTool ShareTool].isLogin
 #define TOKEN [LxmTool ShareTool].session_token
 
-#define Base_URL @"http://app.hkymr.com:8989"
+#define Base_URL @"http://app.hkymr.com:8666"
 //#define Base_URL @"https://app.hkymr.com"
 #define Base_RESOURSE_URL @"https://vedio.hkymr.com"
 
